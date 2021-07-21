@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="7i4-Gc-VzB">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="Ipb-4c-ryS">
+            <objects>
+                <navigationController id="7i4-Gc-VzB" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Lzt-6T-u6z">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Hqe-Wq-Oid"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KcW-OS-YA2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1519" y="125"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Drinks" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cock" translatesAutoresizingMaskIntoConstraints="NO" id="34W-FX-7Sa">
+                                <rect key="frame" x="87" y="88" width="240" height="130"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="130" id="M2Q-Jj-IYz"/>
+                                    <constraint firstAttribute="width" constant="240" id="ybJ-Tj-oGq"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E0j-2r-07h">
+                                <rect key="frame" x="90" y="559" width="234" height="59"/>
+                                <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="39"/>
+                                <color key="tintColor" systemColor="labelColor"/>
+                                <state key="normal" title="Drink do Dia"/>
+                                <connections>
+                                    <action selector="getDrink:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cZb-Cg-DSw"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="caipirinha" translatesAutoresizingMaskIntoConstraints="NO" id="ate-bP-BuM">
+                                <rect key="frame" x="20" y="191" width="374" height="268"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="374" id="2il-na-yqg"/>
+                                    <constraint firstAttribute="height" constant="268" id="aOE-rA-qGr"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ate-bP-BuM" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="0CG-aK-Lro"/>
+                            <constraint firstItem="34W-FX-7Sa" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="80k-hL-eTi"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="E0j-2r-07h" secondAttribute="trailing" constant="90" id="FTw-BA-zJ7"/>
+                            <constraint firstItem="E0j-2r-07h" firstAttribute="top" secondItem="ate-bP-BuM" secondAttribute="bottom" constant="100" id="H2V-Mf-cic"/>
+                            <constraint firstItem="ate-bP-BuM" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="103" id="J6X-uz-VbU"/>
+                            <constraint firstItem="E0j-2r-07h" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="90" id="S8p-cP-XwJ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ate-bP-BuM" secondAttribute="trailing" constant="20" id="aX0-vQ-avf"/>
+                            <constraint firstItem="34W-FX-7Sa" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="87" id="e9q-R9-e0F"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="34W-FX-7Sa" secondAttribute="trailing" constant="87" id="t0A-Xh-UvR"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="ki9-Vr-Bcd"/>
+                    <connections>
+                        <segue destination="k3B-X9-4en" kind="show" identifier="showDrink" id="f9g-sO-KAX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-630.43478260869574" y="124.55357142857142"/>
+        </scene>
+        <!--Drink View Controller-->
+        <scene sceneID="Yb0-OW-Tcd">
+            <objects>
+                <viewController id="k3B-X9-4en" customClass="DrinkViewController" customModule="Drinks" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="q6h-uA-FyH">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="caipirinha" translatesAutoresizingMaskIntoConstraints="NO" id="Rhp-BT-JIw">
+                                <rect key="frame" x="20" y="93" width="374" height="254"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="254" id="IHe-mf-YAW"/>
+                                    <constraint firstAttribute="width" constant="374" id="qNd-vV-Tc2"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Alcoólico" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ptc-MY-00Y">
+                                <rect key="frame" x="20" y="400" width="374" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ingredientes:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZfE-oc-RIr">
+                                <rect key="frame" x="20" y="429" width="374" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Limão Cachaça e Açúcar" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="vss-FG-PFW">
+                                <rect key="frame" x="20" y="471" width="374" height="311"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="302" id="rb1-AH-oOk"/>
+                                </constraints>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="869-F4-RAK">
+                                <rect key="frame" x="128" y="802" width="158" height="50"/>
+                                <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="uQu-uZ-f2p"/>
+                                </constraints>
+                                <state key="normal" title="Novo Drink">
+                                    <color key="titleColor" systemColor="labelColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="newDrink:" destination="k3B-X9-4en" eventType="touchUpInside" id="v3i-kZ-WE2"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Caipirinha" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C5s-Yk-Al7">
+                                <rect key="frame" x="20" y="363" width="374" height="29"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Q2f-nm-tBN"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ZfE-oc-RIr" firstAttribute="leading" secondItem="Q2f-nm-tBN" secondAttribute="leading" constant="20" id="2gK-jw-5rT"/>
+                            <constraint firstItem="Q2f-nm-tBN" firstAttribute="trailing" secondItem="Rhp-BT-JIw" secondAttribute="trailing" constant="20" id="33C-4r-1tl"/>
+                            <constraint firstItem="Q2f-nm-tBN" firstAttribute="trailing" secondItem="vss-FG-PFW" secondAttribute="trailing" constant="20" id="7Kl-cK-c5W"/>
+                            <constraint firstItem="Q2f-nm-tBN" firstAttribute="trailing" secondItem="Ptc-MY-00Y" secondAttribute="trailing" constant="20" id="G50-w0-kjv"/>
+                            <constraint firstItem="Rhp-BT-JIw" firstAttribute="leading" secondItem="Q2f-nm-tBN" secondAttribute="leading" constant="20" id="KAF-Xy-iZg"/>
+                            <constraint firstItem="vss-FG-PFW" firstAttribute="leading" secondItem="Q2f-nm-tBN" secondAttribute="leading" constant="20" id="UdW-Zd-h8f"/>
+                            <constraint firstItem="C5s-Yk-Al7" firstAttribute="leading" secondItem="Q2f-nm-tBN" secondAttribute="leading" constant="20" id="VSm-LQ-iQ6"/>
+                            <constraint firstItem="Q2f-nm-tBN" firstAttribute="trailing" secondItem="ZfE-oc-RIr" secondAttribute="trailing" constant="20" id="Vra-z9-MdX"/>
+                            <constraint firstItem="Ptc-MY-00Y" firstAttribute="leading" secondItem="Q2f-nm-tBN" secondAttribute="leading" constant="20" id="aMK-G5-45v"/>
+                            <constraint firstItem="Ptc-MY-00Y" firstAttribute="top" secondItem="C5s-Yk-Al7" secondAttribute="bottom" constant="8" symbolic="YES" id="dnf-Ff-f44"/>
+                            <constraint firstItem="Q2f-nm-tBN" firstAttribute="trailing" secondItem="C5s-Yk-Al7" secondAttribute="trailing" constant="20" id="ezs-qa-ELM"/>
+                            <constraint firstItem="869-F4-RAK" firstAttribute="leading" secondItem="Q2f-nm-tBN" secondAttribute="leading" constant="128" id="f4w-Mk-w8e"/>
+                            <constraint firstItem="C5s-Yk-Al7" firstAttribute="top" secondItem="Rhp-BT-JIw" secondAttribute="bottom" constant="16" id="hHY-U4-xBa"/>
+                            <constraint firstItem="869-F4-RAK" firstAttribute="top" secondItem="vss-FG-PFW" secondAttribute="bottom" constant="20" id="kFQ-xF-1FL"/>
+                            <constraint firstItem="Q2f-nm-tBN" firstAttribute="trailing" secondItem="869-F4-RAK" secondAttribute="trailing" constant="128" id="oJW-Gu-1U5"/>
+                            <constraint firstItem="ZfE-oc-RIr" firstAttribute="top" secondItem="Ptc-MY-00Y" secondAttribute="bottom" constant="8" symbolic="YES" id="pme-lA-uXO"/>
+                            <constraint firstItem="vss-FG-PFW" firstAttribute="top" secondItem="ZfE-oc-RIr" secondAttribute="bottom" constant="21" id="r8R-Z6-XI9"/>
+                            <constraint firstItem="Q2f-nm-tBN" firstAttribute="bottom" secondItem="869-F4-RAK" secondAttribute="bottom" constant="10" id="wu4-Rr-bCr"/>
+                            <constraint firstItem="Rhp-BT-JIw" firstAttribute="top" secondItem="Q2f-nm-tBN" secondAttribute="top" constant="5" id="yjI-57-Wnm"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="ENS-rc-L2o"/>
+                    <connections>
+                        <outlet property="alcolicoLbl" destination="Ptc-MY-00Y" id="pmJ-IV-t8o"/>
+                        <outlet property="imagemDrink" destination="Rhp-BT-JIw" id="R4j-DO-IyU"/>
+                        <outlet property="ingredientesLbl" destination="vss-FG-PFW" id="dks-WH-eOy"/>
+                        <outlet property="nomeDrink" destination="C5s-Yk-Al7" id="Nnm-Vb-Vzf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="73L-O5-BGA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="230.43478260869566" y="124.55357142857142"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="caipirinha" width="1000" height="667"/>
+        <image name="cock" width="294" height="44"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
